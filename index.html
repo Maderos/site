@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+    <title>My Porfolio</title>
+</head>
+<body class="">
+
+    <div class="container">
+
+        <!--navbar-->
+        
+        <nav class="navbar">
+            <div class="box theme">
+                <div class="item" onclick="theme()">
+                    <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                    <ion-icon id="darkBtn" name="moon-outline" style="display: none;"></ion-icon>
+                </div>
+            </div>
+            <div class="box nav">
+                <div class="item active">
+                    <a href="#about">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <P>about</P>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#resume">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <P>resume</P>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#projects">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        <P>projects</P>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#blogs">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        <P>blogs</P>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#contact">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <P>contact</P>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!--profile-->
+
+        <div class="box profile">
+            <img class="header" src="img/profile.png">
+            <img class="img" src="img/me.png">
+            <h2>Eric Oh</h2>
+            <p id="typed" class="colored"></p>
+            <ul>
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="footer">
+                <div class="divider rtl"></div>
+                <table>
+                    <tr>
+                        <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                        <td><a href="#">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--content-->
+
+        <div class="box content">
+            <div class="wrapper">
+                <h2 id="about">Hey <span class="colored">there! </span>🙋‍♂️</h2>
+                <div class="divider ltr"></div>
+                <P>I'm thrilled tell you a bit about myself. I have over 12 years of experience in healthcare industry specializing in <span class="colored">ER, ICU, and Catastrophic Case Mangement</span>. I am currently working on the skills to become a data analysit in health care setting. computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background. Let's connect!</P>
+                
+                <!--achievemets-->
+
+                <section class="achievements">
+                    <div>
+                        <h3><ion-icon name="accessibility-outline"></ion-icon> 2K+</h3>
+                        <p>WC Cases Handled</p>
+                    </div>
+                    <div>
+                        <h3><ion-icon name="briefcase-outline"></ion-icon> 12+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div>
+                        <h3><ion-icon name="rocket-outline"></ion-icon> 2K+</h3>
+                        <p>WC Cases Closed</p>
+                    </div>
+                </section>
+
+                <!--skills-->
+
+                <h2>My <span class="colored">Skills</span></h2>
+                <div class="divider ltr"></div>
+
+                <section class="skills">
+                    <div><ion-icon name="logo-html5"></ion-icon><p>HTML5</p></div>
+                    <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+                    <div><ion-icon name="server-outline"></ion-icon><p>Excel</p></div>
+                    <div><ion-icon name="logo-python"></ion-icon><p>Python</p></div>
+                    <div>
+                        <div class="circle" style="--percent:65%">
+                            <h4>65<small>%</small></h4>
+                        </div>
+                        <p>MS SQL</p>
+                    </div>
+                    <div>
+                        <div class="circle" style="--percent:85%">
+                            <h4>85<small>%</small></h4>
+                        </div>
+                        <p>MySQL</p></div>
+                    <div>
+                        <div class="progress-bar">
+                            <p>Node Js <span>90%</span></p>
+                            <progress max="100" value="90"></progress>
+                        </div>
+                        <div class="progress-bar">
+                            <p>PostgreSQL <span>75%</span></p>
+                            <progress max="100" value="75"></progress>
+                        </div>
+                    </div>
+                </section>
+
+                <!--experience-->
+
+                <h1 id="resume">My <span class="colored">Experience</span></h1>
+                <div class="divider ltr"></div>
+                    <section class="experiences">
+                        <div class="experience">
+                            <h2>Medical Case Manager</h2>
+                            <h4>Triune Health Group <span class="date">Feb, 2024</span> &#x26AC; <span class="date">Present</span></h4>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="experience">
+                            <h2>Catastrophic Case Manager</h2>
+                            <h4>Advanced Disability Mngt <span class="date">Oct, 2022</span> &#x26AC; <span class="date">Jan, 2024</span></h4>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="experience">
+                            <h2>Medical Case Manager</h2>
+                            <h4>Genex Services <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2022</span></h4>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="experience">
+                            <h2>ER Nurse</h2>
+                            <h4>CHOC Children's Hospital <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2022</span></h4>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="experience">
+                            <h2>ER Nurse</h2>
+                            <h4>Beverly Hospital <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2022</span></h4>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="experience">
+                            <h2>ER/ICU Nurse</h2>
+                            <h4>Huntington Beach Hospital <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2022</span></h4>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                    </section>
+
+                    <!--contributions-->
+
+                    <h2>My <span class="colored">Contributions</span></h2>
+                    <div class="divider ltr"></div>
+
+                    <section class="contribution">
+                        <div class="wrapper">
+                            <activity-graph
+                                range-start="2021-01-01"
+                                range-end="2021-12-31"
+                                activity-levels="0,1,2,3,5"
+                                activity-data="
+                                2021-01-01,
+                                2021-01-01,
+                                2021-01-01,
+                                2021-01-01,
+                                2021-01-01,
+                                2021-01-02,
+                                2021-01-02,
+                                2021-01-02,
+                                2021-01-02,
+                                2021-01-02,
+                                2021-01-03,
+                                2021-01-03,
+                                2021-01-03,
+                                2021-01-04,
+                                2021-01-04,
+                                2021-01-04,
+                                2021-01-05,
+                                2021-01-05,
+                                2021-01-06,
+                                2021-01-06,
+                                2021-01-06,
+                                2021-01-06,
+                                2021-01-06,
+                                2021-01-07,
+                                2021-01-07,
+                                2021-01-08,
+                                2021-01-08,
+                                2021-01-08,
+                                "
+                            ></activity-graph>
+                        </div>
+                    </section>
+
+                    <!--projects-->
+
+                    <h2 id="projects">My <span class="colored">Projects</span></h2>
+                    <div class="divider ltr"></div>
+
+                    <section class="projects">
+                        <div class="project-1">
+                            <img src="img/project-1.png" alt="">
+                            <h3>Project <span class="colored">Title-1</span></h3>
+                        </div>
+                        <div class="project-2">
+                            <img src="img/project-2.png" alt="">
+                            <h3>Project <span class="colored">Title-2</span></h3>
+                        </div>
+                        <div class="project-3">
+                            <img src="img/project-3.png" alt="">
+                            <h3>Project <span class="colored">Title-3</span></h3>
+                        </div>
+                        <div class="project-4">
+                            <img src="img/project-4.png" alt="">
+                            <h3>Project <span class="colored">Title-4</span></h3>
+                        </div>
+                        <div class="project-5">
+                            <img src="img/project-5.png" alt="">
+                            <h3>Project <span class="colored">Title-5</span></h3>
+                        </div>
+                        <div class="project-6">
+                            <img src="img/project-6.png" alt="">
+                            <h3>Project <span class="colored">Title-6</span></h3>
+                        </div>
+                        <div class="project-7">
+                            <img src="img/project-7.png" alt="">
+                            <h3>Project <span class="colored">Title-7</span></h3>
+                        </div>
+                    </section>
+
+                    <!--blogs-->
+
+                    <h2 id="blogs">My <span class="colored">Blogs</span></h2>
+                    <div class="divider ltr"></div>
+                    <section class="blogs">
+                        <div class="blog-box">
+                            <img src="img/blog-1.png" alt="">
+                            <div>
+                                <h3>Web Design Tools</h3>
+                                <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% </p>
+                                <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/blog-2.png" alt="">
+                            <div>
+                                <h3>How to Develope</h3>
+                                <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% </p>
+                                <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/blog-3.png" alt="">
+                            <div>
+                                <h3>What is Bootstrap</h3>
+                                <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% </p>
+                                <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                        <div class="blog-box">
+                            <img src="img/blog-4.png" alt="">
+                            <div>
+                                <h3>What is Larvarel</h3>
+                                <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% </p>
+                                <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--testimonials-->
+                    <br><h2>My <span class="colored">Testimonials</span></h2>
+                    <div class="divider ltr"></div>
+                    <section class="testimonials">
+                        <div class="testimonials-box">
+                            <h1>What <span class="colored">Clients Say About Me?</span></h1>
+                        </div>
+                        <div class="testimonials-box">
+                            <img src="img/testimonial.png" alt="">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </span>
+                            <h3>Dan Grommers</h3> <i>Manager at Google Inc.</i>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="testimonials-box">
+                            <img src="img/testimonial.png" alt="">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </span>
+                            <h3>Dan Grommers</h3> <i>Manager at Google Inc.</i>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                        <div class="testimonials-box">
+                            <img src="img/testimonial.png" alt="">
+                            <span>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </span>
+                            <h3>Dan Grommers</h3> <i>Manager at Google Inc.</i>
+                            <p>using color theme #4fc6ce, #1d3a41, #225b60, #ffffff, #d5f3f9 and some thing in between. Create an image of 20% side rear view korean male with glasses medical professional working on a computer performing data analytics in a medical lab. blur 15% entire image including person. with slight of darker background.</p>
+                        </div>
+                    </section>
+
+                    <!--Contact-->
+                    <h2 id="contact">Contact <span class="colored">Me</span></h2>
+                    <div class="divider ltr"></div>
+                    <section>
+                        <iframe class="map" width="100%" height="300" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.628873321053!2d-117.86954522232814!3d33.924950124437736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd4e54d585f1b%3A0x73904be8021cb7da!2s2373%20Sweetwater%20Dr%2C%20Brea%2C%20CA%2092821!5e0!3m2!1sen!2sus!4v1768896446987!5m2!1sen!2sus"></iframe> 
+                    
+                        <form action="#" class="contact">
+                            <div>
+                                <input type="text" class="input" name="firstname" placeholder="Your first name">
+                            </div>
+                            <div>
+                                <input type="text" class="input" name="lasttname" placeholder="Your last name">
+                            </div>
+                            <div>
+                                <input type="email" class="input" name="email" placeholder="Your email address">
+                            </div>
+                            <div>
+                                <textarea class="input" rows="4" name="subject" placeholder="Write something..."></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="submit">Send</button>
+                            </div>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
